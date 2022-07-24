@@ -1,0 +1,31 @@
+<div class="ch">
+    <!-- <img src="../../assets/curve-arrow.png" id="cruve"> -->
+       <div class="filter2">
+
+    <div class="filter">
+      <div>
+        <select class="filter1" [(ngModel)]="codeC" (click)="f()" >
+          <option >בחר קטגוריה</option>
+          <option value=0>הצג הכל</option>
+          <option value={{c.CodeCategory}} *ngFor="let c of listcatgury">{{c.NameCategory}}</option>
+        
+        </select>
+      </div>
+    
+  <div>
+    <input class="filter1" type="number"placeholder="סינון לפי זמן הכנה"id="myInput" [(ngModel)]="time"   (keyup)="f()">
+  </div>
+  <div>
+    <input  class="filter1" type="text" placeholder="סינון לפי שם"id="myInput" [(ngModel)]="name"(keyup)="f()">
+    
+  </div>
+
+      
+   
+</div>
+</div>‏
+<input type="button" (click)="goTo()" value="הוספת מתכון" id="add">
+</div>
+<body class="bodyAll">
+<app-details-r *ngFor="let x of filterList" [MyRecipe]=x ></app-details-r>
+</body>

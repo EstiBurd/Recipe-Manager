@@ -1,0 +1,26 @@
+<body>
+  <div class="container-fluid">
+    <img src="../../assets/לוגוג.gif" class="logo">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          
+          <ul class="nav navbar-nav">
+
+            
+           <li><a routerLink="allRecipe" id="len1" class="hoverable">המתכונים שלנו</a></li>
+
+           <li><a routerLink="register" id="len2" class="hoverable">הרשמה</a></li>
+           <li><a routerLink="login" id="len3" class="hoverable">התחברות</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <input type="button" id="len4"(click)="out()" class="exit" value="יציאה">
+    </div> 
+  </body>
+
+    
+<!-- <app-all-recipes></app-all-recipes> -->
+<!-- <app-register></app-register> -->
+<router-outlet></router-outlet>
+<!-- <app-details-r></app-details-r> -->

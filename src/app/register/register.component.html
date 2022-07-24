@@ -1,0 +1,52 @@
+<div class="b">
+<form [formGroup]="myForm" (ngSubmit)="save()" class="login-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 login-sec">
+                <h2 class="text-center">הרשמה</h2>
+    <div class="form-group">
+        <label for="exampleInputEmail1" class="text-uppercase">קוד משתמש</label>
+       
+    <input type="text" formControlName="CodeUser"  class="inputs" [class.error-red]="myForm.controls['CodeUser'].touched&&myForm.controls['CodeUser'].errors"/>
+    <div *ngIf="myForm.controls['CodeUser'].touched&&myForm.controls['CodeUser'].errors">זהו שדה חובה!</div>
+ </div>  
+
+<div class="form-group">
+    <label for="exampleInputEmail1" class="text-uppercase">שם משתמש</label>
+    <input type="text"  class="inputs" formControlName="NameUser">
+    <div *ngIf="myForm.controls['NameUser'].touched&&myForm.controls['NameUser'].errors">זהו שדה חובה!</div>
+
+</div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1" class="text-uppercase">כתובת</label>
+    <input type="text"  class="inputs" formControlName="Address">
+</div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1" class="text-uppercase">אימייל</label>
+    <input type="text" class="inputs" formControlName="Email" [class.error-red]="myForm.controls['Email'].touched&&myForm.controls['Email'].errors">
+    <div *ngIf="myForm.controls['Email'].touched&&myForm.controls['Email'].errors">זהו שדה חובה!</div>
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1" class="text-uppercase">סיסמא</label>
+    <input type="text"  class="inputs" formControlName="Password" [class.error-red]="myForm.controls['Password'].touched&&myForm.controls['Password'].errors">
+    <div *ngIf="myForm.controls['Password'].touched&&myForm.controls['Password'].errors">זהו שדה חובה!</div>
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1" class="text-uppercase">אימות סיסמא</label>
+    <input type="text"  class="inputs" formControlName="Password1" [class.error-red]="myForm.controls['Password1'].touched&&myForm.controls['Password1'].errors">
+    <div *ngIf="myForm.controls['Password1'].touched&&myForm.controls['Password1'].errors">זהו שדה חובה!</div>
+    {{myForm.errors?.confirmError.massage}}
+</div>
+
+<div class="form-check">
+
+<button type="submit"  class="button">הרשם</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+ <!-- [disabled]="!myForm.valid" -->
+</div>

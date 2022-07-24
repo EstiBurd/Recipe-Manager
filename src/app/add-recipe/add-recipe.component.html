@@ -1,0 +1,96 @@
+<div class="b">
+    
+        
+<form [formGroup]="myRecipe" (ngSubmit)="add()">
+    <div class="sc">
+        <button type="submit" class="save">שמור מתכון</button>
+    </div>
+       
+    <div class="container">
+        <div  class="row">
+    <div class="form-group">
+        <label  class="text-uppercase">קוד משתמש</label>
+    <input type="text" class="inputs" formControlName="CodeUser" [class.error-red]="myRecipe.controls['CodeUser'].touched&&myRecipe.controls['CodeUser'].errors"/>
+    <div class="if" *ngIf="myRecipe.controls['CodeUser']?.touched&&myRecipe.controls['CodeUser'].errors?.required">זהו שדה חובה</div>
+    <div class="if" *ngIf="myRecipe.controls['CodeUser']?.touched&&myRecipe.controls['CodeUser'].errors?.pattern">קוד מכיל ספרות בלבד</div>
+
+    </div> 
+
+    <div class="form-group">
+        <label  class="text-uppercase">קוד מתכון</label>
+    <input type="text" class="inputs" formControlName="CodeRecipe" [class.error-red]="myRecipe.controls['CodeRecipe'].touched&&myRecipe.controls['CodeRecipe'].errors"/>
+    <div class="if" *ngIf="myRecipe.controls['CodeRecipe']?.touched&&myRecipe.controls['CodeRecipe'].errors?.required">זהו שדה חובה</div>
+    <div class="if" *ngIf="myRecipe.controls['CodeRecipe']?.touched&&myRecipe.controls['CodeRecipe'].errors?.pattern">קוד מכיל ספרות בלבד</div>
+ </div>  
+
+ <div class="form-group">
+    <label  class="text-uppercase">שם המתכון</label>
+<input type="text"  class="inputs" formControlName="NameRecipe" [class.error-red]="myRecipe.controls['NameRecipe'].touched&&myRecipe.controls['NameRecipe'].errors"/>
+<div class="if" *ngIf="myRecipe.controls['NameRecipe'].touched&&myRecipe.controls['NameRecipe'].errors">זהו שדה חובה</div>
+</div>  
+<div class="form-group">
+    <label  class="text-uppercase">קטגוריה</label>
+    <select  class="inputs" formControlName="CodeCategory">
+        <option>בחר קטגוריה</option>
+        <option *ngFor="let c of ArrC">
+            {{c.NameCategory}}
+        </option>
+    </select>
+</div>  
+<div class="form-group">
+    <label  class="text-uppercase">זמן הכנה</label>
+<input type="text" class="inputs" formControlName="Time" [class.error-red]="myRecipe.controls['Time'].touched&&myRecipe.controls['Time'].errors"/>
+<div class="if" *ngIf="myRecipe.controls['Time']?.touched&&myRecipe.controls['Time'].errors?.required">זהו שדה חובה</div>
+<div class="if" *ngIf="myRecipe.controls['Time']?.touched&&myRecipe.controls['Time'].errors?.pattern">זמן הכנה הוא במספרים בלבד</div>
+</div>  
+
+<div class="form-group">
+    <label  class="text-uppercase">דרגת קושי</label>
+<input type="text" class="inputs" formControlName="LevelOfDifficul" [class.error-red]="myRecipe.controls['LevelOfDifficul'].touched&&myRecipe.controls['LevelOfDifficul'].errors"/>
+<div class="if" *ngIf="myRecipe.controls['LevelOfDifficul']?.touched&&myRecipe.controls['LevelOfDifficul'].errors?.required">זהו שדה חובה</div>
+<div class="if" *ngIf="myRecipe.controls['LevelOfDifficul']?.touched&&myRecipe.controls['LevelOfDifficul'].errors?.pattern">דירוג  חייב להיות בין 1 ל 5</div>
+
+</div>  
+
+<div class="form-group">
+    <label  class="text-uppercase">תאריך הוספה</label>
+<input type="date" class="inputs" formControlName="DateAddRecipe" [class.error-red]="myRecipe.controls['DateAddRecipe'].touched&&myRecipe.controls['DateAddRecipe'].errors"/>
+<div  *ngIf="myRecipe.controls['DateAddRecipe'].touched&&myRecipe.controls['DateAddRecipe'].errors">זהו שדה חובה</div>
+</div> 
+
+
+<div class="form-group"> 
+    <label  class="text-uppercase">הוסף תמונה</label>
+<input type="file" class="inputs" formControlName="Image"/>
+
+</div>
+
+
+
+
+</div> 
+</div> 
+
+</form>
+<div  class="left">
+<div class="form-group">
+    <label class="text-uppercase">מצרכים</label>
+<div *ngFor="let x of arrP,let i=index,trackBy:trackByidx">
+    <input type="text"  class="inputs1" [(ngModel)]="arrP[i]" name="{{i}}" (blur)="updatePre()" placeholder="הכנס מוצר">
+</div>
+</div>  
+
+
+ <div class="form-group">
+    <label  class="text-uppercase">אופן ההכנה</label>
+<div *ngFor="let x of arrL,let i=index,trackBy:trackByidx">
+    <input type="text"  class="inputs1" [(ngModel)]="arrL[i]" name="{{i}}" (blur)="updateList()" placeholder="הכנס הוראות הכנה"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+

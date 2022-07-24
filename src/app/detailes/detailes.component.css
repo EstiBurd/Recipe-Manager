@@ -1,0 +1,106 @@
+
+.all{
+    width: 1000px;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(214, 214, 214, 0.555);
+margin-left: 450px;
+   margin-top: 10px;
+
+float: inline-end;
+/* margin-top: 100px; */
+/* border: dashed rgb(14, 85, 14) 2px; */
+display: flex;
+/* flex-wrap: wrap; */
+padding: 20px;
+font-family: GVERETLEVINALEFALEFALEF-REGULAR;
+}
+.time{
+    direction: rtl;
+}
+#time{
+    width: 40px;
+    height: 40px;
+}
+label{
+    font-size: 27px;
+    padding: 18px;
+    direction: rtl;
+    color: rgb(14, 85, 14);
+}
+
+.level{
+    font-size: 22px;
+    direction: rtl;
+    /* padding: 15px; */
+    margin-left: 50px;
+}
+.level1{
+     margin-left: 50px;
+     font-size: 27px;
+     padding: 18px;
+     direction: rtl;
+     color: rgb(14, 85, 14);
+}
+.cat{
+     font-size: 27px;
+     padding: 18px;
+     direction: rtl;
+     color: rgb(14, 85, 14);
+float: inline-end;
+}
+#img{
+  margin-left: 10px;
+}
+.date{
+    font-size: 22px;
+    direction: rtl;
+    font-family: GVERETLEVINALEFALEFALEF-REGULAR;
+    float: inline-start;
+}
+#level{
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+.name{
+   text-align: center;
+   font-size: 45px;
+   color: rgb(14, 85, 14);
+   /* text-shadow: black; */
+   text-shadow: 0 0 5px #252525;
+   font-family: GVERETLEVINALEFALEFALEF-REGULAR;
+
+}
+.pr{
+    font-size: 22px;
+    direction: rtl;
+}
+.of{
+     font-size: 22px;
+     direction: rtl;
+}
+.img{
+    width: 900px;
+    height: 680px;
+    float: left;
+    /* margin-left: 700px; */
+    /* border-radius: 3px; */
+    /* border: ridge rgb(0, 0, 0); */
+   margin-top: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.edit{
+    font-size: 23px;
+    font-family: GVERETLEVINALEFALEFALEF-REGULAR;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100px;
+    height: 50px;
+    border:  rgb(14, 85, 14) 1px;
+    margin-left: 15px;
+    margin-top:10px;
+  }
+  .edit:hover{
+    color:#af1919;
+    transition: .5s ease;
+  }

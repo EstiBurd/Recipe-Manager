@@ -1,0 +1,93 @@
+
+.b{
+    background-image: url("../../assets/לוגין.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 869px;
+    direction: rtl;
+    font-family: GVERETLEVINALEFALEFALEF-REGULAR;
+    padding: 50px;
+ } 
+  
+ .inputs{
+     width: 230px;
+     height:30px;
+ margin-left: 100px;
+ border-radius:  2px;
+border: 1px solid  #af1919;
+font-size: 20px;
+ }
+   .red{
+       color: #af1919;
+       font-size: 14px;
+      direction: rtl;
+   } 
+
+ 
+ .button{
+     background-color:rgb(75, 75, 75) ;
+     width: 240px;
+     height: 40px;
+     font-size: 20px;
+    float: left;
+     font-weight: 400;
+     margin-top: 30px;
+     margin-left: 90px;
+     color: white;
+ }
+ 
+ .form-group{
+    width: 90px;
+    height: 50px;
+    margin-left: 300px;
+     text-align:right;
+     float: left;
+     margin-bottom: 60px;
+ }
+    
+    .text-uppercase{
+        width: 145px; 
+        margin-left: 100px;
+      direction: rtl;
+      font-size: 20px;
+      font-family: GVERETLEVINALEFALEFALEF-REGULAR;
+
+    }
+     
+    #imgL{
+        width: 27px;
+        height: 27px;
+        float: right;
+        
+    }  
+ .banner-sec{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+ .container{background:rgba(248, 248, 248, 0.349); border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1) ;
+ width:450px;
+ height: 550px;
+border: 1px dashed  #af1919;
+ }
+ #tow{
+     margin-left: 700px;
+ }
+ .carousel-inner{border-radius:0 10px 10px 0;}
+ .carousel-caption{text-align:left; left:5%;}
+ .text-center{
+    -webkit-text-stroke: 1px #af1919;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+ margin-bottom:60px;
+    
+    font-size: 40px;
+    margin-right: -400px;
+ }
+ .btn-login{background: #000000; color:rgb(255, 255, 255);font-size: 20px; font-weight:200;width: 150px;height: 45px; margin-top: 110px;margin-left: 240px;float: right;}
+ .banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+ .banner-text h2{color:#fff; font-weight:600;}
+ .banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+ 

@@ -1,0 +1,46 @@
+<div class="b">
+  <form [formGroup]="Forml"  (ngSubmit)="send()" class="login-form">
+      <div class="container">
+          <div class="row">
+             
+              <div class="col-md-4 login-sec"> 
+                  <div id="tow">
+                  <h2 class="text-center">התחברות</h2>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1" class="text-uppercase">קוד משתמש</label>
+                 
+              <input type="text" formControlName="CodeUser"  class="inputs" [class.error-red]="Forml.controls['CodeUser'].touched&&Forml.controls['CodeUser'].errors"/>
+              <div *ngIf="Forml.controls['CodeUser'].touched&&Forml.controls['CodeUser'].errors">זהו שדה חובה!</div>
+           </div>  
+      <div class="form-group">
+          <label for="exampleInputEmail1" class="text-uppercase">שם משתמש</label>
+         
+          <input type="text"  formControlName="NameUser"  class="inputs" name="name" id="password" />
+          <div *ngIf="Forml.controls['NameUser'].touched&&Forml.controls['NameUser'].errors" class="red"> זהו שדה חובה!</div>
+   </div>  
+  
+  <div class="form-group">
+      <label for="exampleInputEmail1" class="text-uppercase">סיסמא</label>
+      <div class="ng">
+      <input type="password" #pass  formControlName="Password" class="inputs"  name="password" id="password"  [class.error-redl]="Forml.controls['Password'].touched&&Forml.controls['Password'].errors">
+      <img *ngIf="isShow" src="../../assets/eye.png" (click)="myFunction(pass)" id="imgL">
+      <img *ngIf="!isShow" src="../../assets/hide.png" (click)="myFunction(pass)" id="imgL">
+    </div>
+      <div *ngIf="Forml.controls['Password'].touched&&Forml.controls['Password'].errors" class="red"> זהו שדה חובה!</div><br>
+    
+  </div>
+  <div class="form-check">
+  
+  <button type="submit" class="button" [disabled]="!Forml.valid">כניסה</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+</form>
+</div>
+
+
+      
+

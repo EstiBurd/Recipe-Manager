@@ -1,0 +1,24 @@
+<div class="bodyD">
+<div class="container1">
+<div class="container">
+  <img [src]=" MyRecipe.Image"   alt="Avatar" class="image"/>
+  <div class="overlay" (click)="getAllDetailes()">
+     
+    <div class="name" >
+  {{MyRecipe.NameRecipe}}
+    </div>
+
+    <div class="time">
+      <h2>  זמן הכנה: {{MyRecipe.Time|hours}} </h2>
+  
+    </div>
+    <div class="darga">
+      <h2>  {{MyRecipe.LevelOfDifficul}}   :דרגת קושי</h2>
+  </div>
+  <div class="edit">
+    
+  </div>
+    </div>
+  </div>
+</div></div>
+

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family:GVERETLEVINALEFALEFALEF-REGULAR;
+    src: url("assets/myFonts/GVERETLEVINALEFALEFALEF-REGULAR.TTF");
+    font-family: bold;
+}
+@font-face{
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    src: url("assets/myFonts/GVERETLEVINALEFALEFALEF-REGULAR.TTF");
+   
+}
+body{
+    width: 100%;
+    margin:0;
+    height: 100%;
+
+}
+
